@@ -9,8 +9,8 @@ public class Const {
     public static final int EASY = 1;
     public static final int MODERATE = EASY + 1;
     public static final int HARD = MODERATE + 1;
-    public static final int row = 20;
-    public static final int col = 20;
+    public static final int col = 15;
+    public static final int row = 10;
     public static final int HIDDEN = 12;
     public static final int FLAG = 13;
     public static final int ACCIDENTAL_MINE = 11;

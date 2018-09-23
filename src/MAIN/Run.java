@@ -12,4 +12,15 @@ public class Run {
         Model.initiateScreen();
         Model.initiateMenu();
     }
+    public static void printArr(int[][] a)
+    {
+        for(int i = 0; i < Const.col; i++)
+        {
+            for(int j = 0; j < Const.row; j++)
+            {
+                System.out.print(a[i][j] + ",");
+            }
+            System.out.println();
+        }
+    }
 }

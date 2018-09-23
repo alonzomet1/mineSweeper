@@ -42,7 +42,6 @@ public class Model {
         mainScreen.packAndShow();
     }
 
-
     public static void closeMenu()
     {
         menuPanel.close();
@@ -59,7 +58,7 @@ public class Model {
 
     public static void initiateGame(int diffculty)
     {
-        BoardControl.initiateBoard(diffculty ,Const.row, Const.col);
+        BoardControl.initiateBoard(diffculty);
         mainScreen.adjustScreenLayout();
         initiateGameUI();
         initiateExtendPanel();
@@ -84,10 +83,10 @@ public class Model {
     public static void initiateGameUI()
     {
         gamePanel = new GamePanel();
-        uiGameBtn = new BtnGame[Const.row][Const.col];
-        for (int i = 0; i < Const.row; i++)
+        uiGameBtn = new BtnGame[Const.col][Const.row];
+        for (int i = 0; i < Const.col; i++)
         {
-            for (int j = 0; j < Const.col; j++)
+            for (int j = 0; j < Const.row; j++)
             {
                 uiGameBtn[i][j] = new BtnGame();
                 String bttName = Integer.toString(i) + "," + Integer.toString(j);
@@ -102,9 +101,9 @@ public class Model {
     public static void updateUIBoard(int y, int x)
     {
         int[][] board = BoardControl.updateUiBoard(y, x);
-        for (int i = 0; i < Const.row; i++)
+        for (int i = 0; i < Const.col; i++)
         {
-            for (int j = 0; j < Const.col; j++)
+            for (int j = 0; j < Const.row; j++)
             {
                 uiGameBtn[i][j].setButtonState(board[i][j]);
             }

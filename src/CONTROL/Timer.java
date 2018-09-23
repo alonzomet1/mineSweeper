@@ -6,7 +6,6 @@ public class Timer extends Thread {
     private int Sec;
     private int Min;
     public void run(){
-        System.out.println("MyThread running");
         while(BoardControl.gameOver == false)
         {
             try {
@@ -15,14 +14,14 @@ public class Timer extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println(1);
             Model.updateTextClock(this.getTimeStr());
         }
     }
     public String getTimeStr()
     {
+        Min = Sec / 60;
         String strSec = Integer.toString(Sec % 60);
-        String strMin = Integer.toString(Sec / 60);
+        String strMin = Integer.toString(Min);
         if(Sec < 10)
         {
             strSec = "0" + strSec;
