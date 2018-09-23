@@ -15,7 +15,7 @@
       <file leaf-file-name="Timer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CONTROL/Timer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
+            <state relative-caret-position="21">
               <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
               <folding />
             </state>
@@ -25,7 +25,7 @@
       <file leaf-file-name="Run.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MAIN/Run.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="252">
               <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -37,24 +37,22 @@
       <file leaf-file-name="BoardControl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CONTROL/BoardControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="69" column="52" lean-forward="false" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
+            <state relative-caret-position="-809">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5496#5497#0" expanded="true" />
-                <element signature="e#5538#5539#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MODEL/Model.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="86" column="37" lean-forward="false" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#updateUiBoard#0;class#BoardControl#0" expanded="false" />
+                <element signature="method#initiateUiBoard#0;class#BoardControl#0" expanded="false" />
+                <element signature="method#initiateMines#0;class#BoardControl#0" expanded="false" />
+                <element signature="method#initiateBoardAssist#0;class#BoardControl#0" expanded="false" />
+                <element signature="method#initiateRest#0;class#BoardControl#0" expanded="false" />
+                <element signature="method#transfromUIBoardToLost#0;class#BoardControl#0" expanded="false" />
+                <element signature="method#checkWonGame#0;class#BoardControl#0" expanded="false" />
+                <element signature="e#5489#5490#0" expanded="true" />
+                <element signature="e#5531#5532#0" expanded="true" />
+                <element signature="e#5585#5586#0" expanded="true" />
+                <element signature="e#5629#5630#0" expanded="true" />
+                <element signature="method#randomWithRange#0;class#BoardControl#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -74,16 +72,16 @@
         <entry file="file://$PROJECT_DIR$/src/CONST/Const.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+              <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlagBtn.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FlagBtn.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UI/BUTTONS/FlagBtn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
+            <state relative-caret-position="195">
               <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -92,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BtnGame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BtnGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/BUTTONS/BtnGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
+            <state relative-caret-position="252">
               <caret line="19" column="84" lean-forward="false" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -115,6 +113,27 @@
                 <element signature="e#448#449#0" expanded="true" />
                 <element signature="e#486#487#0" expanded="true" />
                 <element signature="e#513#514#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MODEL/Model.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#initiateMenu#0;class#Model#0" expanded="false" />
+                <element signature="method#initiateMenuButtons#0;class#Model#0" expanded="false" />
+                <element signature="method#closeMenu#0;class#Model#0" expanded="false" />
+                <element signature="method#initiateGame#0;class#Model#0" expanded="false" />
+                <element signature="method#initiateGameUI#0;class#Model#0" expanded="false" />
+                <element signature="method#updateUIBoard#0;class#Model#0" expanded="false" />
+                <element signature="method#updateUI#0;class#Model#0" expanded="false" />
+                <element signature="method#initiateExtendPanel#0;class#Model#0" expanded="false" />
+                <element signature="method#turnBtnToFlag#0;class#Model#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -144,7 +163,6 @@
       <find>add</find>
       <find>HIDDEN</find>
       <find>HID</find>
-      <find>pri</find>
       <find>prin</find>
       <find>extend</find>
       <find>upd</find>
@@ -152,8 +170,9 @@
       <find>clock</find>
       <find>uiBoard</find>
       <find>uiB</find>
-      <find>col</find>
       <find>row</find>
+      <find>col</find>
+      <find>pri</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -204,10 +223,10 @@
         <option value="$PROJECT_DIR$/src/UI/BUTTONS/FlagBtn.java" />
         <option value="$PROJECT_DIR$/src/CONTROL/Timer.java" />
         <option value="$PROJECT_DIR$/src/MAIN/Run.java" />
-        <option value="$PROJECT_DIR$/src/MODEL/Model.java" />
         <option value="$PROJECT_DIR$/src/UI/BUTTONS/BtnGame.java" />
-        <option value="$PROJECT_DIR$/src/CONTROL/BoardControl.java" />
         <option value="$PROJECT_DIR$/src/CONST/Const.java" />
+        <option value="$PROJECT_DIR$/src/CONTROL/BoardControl.java" />
+        <option value="$PROJECT_DIR$/src/MODEL/Model.java" />
       </list>
     </option>
   </component>
@@ -233,9 +252,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -295,6 +311,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -472,6 +491,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="2" width="1936" height="1036" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -486,7 +506,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17987487" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17987487" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -507,7 +527,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -538,13 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -554,6 +567,15 @@
           <caret line="120" column="8" lean-forward="true" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initiateMenu#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateMenuButtons#0;class#Model#0" expanded="false" />
+            <element signature="method#closeMenu#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateGame#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateGameUI#0;class#Model#0" expanded="false" />
+            <element signature="method#updateUIBoard#0;class#Model#0" expanded="false" />
+            <element signature="method#updateUI#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateExtendPanel#0;class#Model#0" expanded="false" />
+            <element signature="method#turnBtnToFlag#0;class#Model#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -611,6 +633,15 @@
           <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initiateMenu#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateMenuButtons#0;class#Model#0" expanded="false" />
+            <element signature="method#closeMenu#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateGame#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateGameUI#0;class#Model#0" expanded="false" />
+            <element signature="method#updateUIBoard#0;class#Model#0" expanded="false" />
+            <element signature="method#updateUI#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateExtendPanel#0;class#Model#0" expanded="false" />
+            <element signature="method#turnBtnToFlag#0;class#Model#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -636,8 +667,18 @@
           <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5496#5497#0" expanded="true" />
-            <element signature="e#5538#5539#0" expanded="true" />
+            <element signature="method#updateUiBoard#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateUiBoard#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateMines#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateBoardAssist#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateRest#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#transfromUIBoardToLost#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#checkWonGame#0;class#BoardControl#0" expanded="false" />
+            <element signature="e#5489#5490#0" expanded="true" />
+            <element signature="e#5531#5532#0" expanded="true" />
+            <element signature="e#5585#5586#0" expanded="true" />
+            <element signature="e#5629#5630#0" expanded="true" />
+            <element signature="method#randomWithRange#0;class#BoardControl#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -678,8 +719,18 @@
           <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5496#5497#0" expanded="true" />
-            <element signature="e#5538#5539#0" expanded="true" />
+            <element signature="method#updateUiBoard#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateUiBoard#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateMines#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateBoardAssist#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateRest#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#transfromUIBoardToLost#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#checkWonGame#0;class#BoardControl#0" expanded="false" />
+            <element signature="e#5489#5490#0" expanded="true" />
+            <element signature="e#5531#5532#0" expanded="true" />
+            <element signature="e#5585#5586#0" expanded="true" />
+            <element signature="e#5629#5630#0" expanded="true" />
+            <element signature="method#randomWithRange#0;class#BoardControl#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -798,13 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,16 +881,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/BUTTONS/FlagBtn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/13.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -859,7 +893,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CONTROL/Timer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="21">
           <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
           <folding />
         </state>
@@ -867,7 +901,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MAIN/Run.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="252">
           <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -880,36 +914,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MODEL/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="86" column="37" lean-forward="false" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CONTROL/BoardControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="69" column="52" lean-forward="false" selection-start-line="69" selection-start-column="52" selection-end-line="69" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5496#5497#0" expanded="true" />
-            <element signature="e#5538#5539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CONST/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/BUTTONS/BtnChooser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -920,8 +924,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/BUTTONS/BtnGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="252">
           <caret line="19" column="84" lean-forward="false" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CONST/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CONTROL/BoardControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-809">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateUiBoard#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateUiBoard#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateMines#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateBoardAssist#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#initiateRest#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#transfromUIBoardToLost#0;class#BoardControl#0" expanded="false" />
+            <element signature="method#checkWonGame#0;class#BoardControl#0" expanded="false" />
+            <element signature="e#5489#5490#0" expanded="true" />
+            <element signature="e#5531#5532#0" expanded="true" />
+            <element signature="e#5585#5586#0" expanded="true" />
+            <element signature="e#5629#5630#0" expanded="true" />
+            <element signature="method#randomWithRange#0;class#BoardControl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MODEL/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initiateMenu#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateMenuButtons#0;class#Model#0" expanded="false" />
+            <element signature="method#closeMenu#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateGame#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateGameUI#0;class#Model#0" expanded="false" />
+            <element signature="method#updateUIBoard#0;class#Model#0" expanded="false" />
+            <element signature="method#updateUI#0;class#Model#0" expanded="false" />
+            <element signature="method#initiateExtendPanel#0;class#Model#0" expanded="false" />
+            <element signature="method#turnBtnToFlag#0;class#Model#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/BUTTONS/FlagBtn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

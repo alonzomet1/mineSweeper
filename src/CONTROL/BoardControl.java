@@ -30,10 +30,7 @@ public class BoardControl {
         initiateMines(difficulty);
         initiateBoardAssist();
         initiateRest();
-        Run.printArr(board);
-        System.out.println("aa");
         initiateUiBoard();
-        Run.printArr(uiBoard);
     }
     public static int[][] updateUiBoard(int y, int x)
     {
@@ -70,7 +67,11 @@ public class BoardControl {
         if(x == Const.row || x < 0 || y == Const.col || y < 0) { }
         else
         {
-            if(board[y][x] == Const.EMPTY && (uiBoard[y][x] == Const.HIDDEN || uiBoard[y][x] == Const.FLAG))
+            if(board[y][x] != Const.EMPTY)
+            {
+                uiBoard[y][x] = board[y][x];
+            }
+            else if(uiBoard[y][x] == Const.HIDDEN || uiBoard[y][x] == Const.FLAG)
             {
                 uiBoard[y][x] = Const.EMPTY;
                 GetNearEmptyBlocks(y + 1, x);
@@ -191,9 +192,13 @@ public class BoardControl {
     }
 
 
-    public static void enteredFlag(int y, int x)
+    public static void enterFlag(int y, int x)
     {
         uiBoard[y][x] = Const.FLAG;
+    }
+    public static void removeFlag(int y, int x)
+    {
+        uiBoard[y][x] = Const.HIDDEN;
     }
 
     //easy random number generator

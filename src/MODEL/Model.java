@@ -27,23 +27,32 @@ public class Model {
     static UI.Screen mainScreen;
     static boolean flagMode = false;
 
-
     public static void initiateScreen()
     {
         mainScreen = new UI.Screen("mineSweeper");
     }
-
-
-    public static void initiateMenu()
-    {
+    public static void initiateMenu() {
         menuPanel = new MenuPanel();
         mainScreen.addComp(menuPanel.getPanel());
         initiateMenuButtons();
         mainScreen.packAndShow();
     }
-
-    public static void closeMenu()
-    {
+    public static void initiateMenuButtons() {
+        Font bold = new Font("Arial", Font.BOLD, Const.btnTxtSize);
+        uiMenuBtn = new BtnChooser[Const.HARD];
+        for(int i = 0; i < Const.HARD; i++)
+        {
+            uiMenuBtn[i] = new BtnChooser(i + 1);
+            menuPanel.addComp(uiMenuBtn[i].getButton());
+        }
+        uiMenuBtn[0].setText("EASY");
+        uiMenuBtn[1].setText("MODERATE");
+        uiMenuBtn[2].setText("HARD");
+        uiMenuBtn[0].setFont(bold);
+        uiMenuBtn[1].setFont(bold);
+        uiMenuBtn[2].setFont(bold);
+    }
+    public static void closeMenu() {
         menuPanel.close();
         for(int i = 0; i < Const.HARD; i++)
         {
@@ -51,13 +60,8 @@ public class Model {
         }
         mainScreen.getScreen().remove(menuPanel.getPanel());
     }
-    public static void updateTextClock(String time)
-    {
-        textClock.updateTime(time);
-    }
 
-    public static void initiateGame(int diffculty)
-    {
+    public static void initiateGame(int diffculty) {
         BoardControl.initiateBoard(diffculty);
         mainScreen.adjustScreenLayout();
         initiateGameUI();
@@ -67,21 +71,8 @@ public class Model {
         gamePanel.showPanel();
         clock = new Timer();//start counting
         clock.start();
-        //System.out.println(clock.getTimeStr());
     }
-
-    public static void initiateExtendPanel() {
-       extendPanel = new ExtendPanel();
-       prompter = new Prompter();
-       textClock = new TextClock();
-       flagBtn = new FlagBtn();
-       extendPanel.getPanel().add(flagBtn, BorderLayout.CENTER);
-       extendPanel.getPanel().add(textClock, BorderLayout.EAST);
-       extendPanel.getPanel().add(prompter, BorderLayout.WEST);
-    }
-
-    public static void initiateGameUI()
-    {
+    public static void initiateGameUI() {
         gamePanel = new GamePanel();
         uiGameBtn = new BtnGame[Const.col][Const.row];
         for (int i = 0; i < Const.col; i++)
@@ -97,9 +88,7 @@ public class Model {
         mainScreen.packAndShow();
     }
 
-
-    public static void updateUIBoard(int y, int x)
-    {
+    public static void updateUIBoard(int y, int x) {
         int[][] board = BoardControl.updateUiBoard(y, x);
         for (int i = 0; i < Const.col; i++)
         {
@@ -109,8 +98,7 @@ public class Model {
             }
         }
     }
-    public static void updateUI(int y, int x)
-    {
+    public static void updateUI(int y, int x) {
        updateUIBoard(y, x);
        if(BoardControl.gameIsLost())
        {
@@ -122,24 +110,21 @@ public class Model {
        }
     }
 
-
-    public static void initiateMenuButtons()
+    public static void updateTextClock(String time)
     {
-        Font bold = new Font("Arial", Font.BOLD, Const.btnTxtSize);
-        uiMenuBtn = new BtnChooser[Const.HARD];
-        for(int i = 0; i < Const.HARD; i++)
-        {
-            uiMenuBtn[i] = new BtnChooser(i + 1);
-            menuPanel.addComp(uiMenuBtn[i].getButton());
-        }
-        uiMenuBtn[0].setText("EASY");
-        uiMenuBtn[1].setText("MODERATE");
-        uiMenuBtn[2].setText("HARD");
-        uiMenuBtn[0].setFont(bold);
-        uiMenuBtn[1].setFont(bold);
-        uiMenuBtn[2].setFont(bold);
+        textClock.updateTime(time);
     }
-     public static void reverseFlagMode()
+    public static void initiateExtendPanel() {
+        extendPanel = new ExtendPanel();
+        prompter = new Prompter();
+        textClock = new TextClock();
+        flagBtn = new FlagBtn();
+        extendPanel.getPanel().add(flagBtn, BorderLayout.CENTER);
+        extendPanel.getPanel().add(textClock, BorderLayout.EAST);
+        extendPanel.getPanel().add(prompter, BorderLayout.WEST);
+    }
+
+    public static void reverseFlagMode()
     {
         flagMode = !flagMode;
     }
@@ -147,12 +132,16 @@ public class Model {
     {
         return flagMode;
     }
-    public static void turnBtnToFlag(int y, int x)
-    {
+    public static void turnBtnToFlag(int y, int x){
         if((BoardControl.getUiBoard())[y][x] == Const.HIDDEN)
         {
-            BoardControl.enteredFlag(y, x);
-            uiGameBtn[y][x].setButtonState(13); //red flag
+            BoardControl.enterFlag(y, x);
+            uiGameBtn[y][x].setButtonState(Const.FLAG); //red flag
+        }
+        else if((BoardControl.getUiBoard())[y][x] == Const.FLAG)
+        {
+            BoardControl.removeFlag(y, x);
+            uiGameBtn[y][x].setButtonState(Const.HIDDEN);
         }
     }
 }
